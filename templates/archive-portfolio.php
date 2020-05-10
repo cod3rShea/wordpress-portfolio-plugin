@@ -1,10 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Sean_Shea_Development
+ * The template for displaying portfolio archive pages
  */
 
 get_header();
