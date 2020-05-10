@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Basic WP Portfolio
- * Plugin URI:  
+ * Plugin URI:  https://github.com/cod3rShea/wordpress-portfolio-plugin
  * Description: This will create a basic portfolio section.
  * Version:     1.0
  * Author:      Sean Shea
@@ -11,6 +11,6 @@
  */
 
 // creates the block
-include( plugin_dir_path( __FILE__ ) . 'register/register-block.php');
+include( plugin_dir_path( __FILE__ ) . 'register/register-portfolio.php');
 
 ?>
