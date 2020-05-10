@@ -28,7 +28,7 @@ function portfolio_custom_post_type() {
               'description'         => __( 'Portfolio peices', 'twentytwenty' ),
               'labels'              => $labels,
               // Features this CPT supports in Post Editor
-              'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
+              'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
               // You can associate this CPT with a taxonomy or custom taxonomy. 
               // 'taxonomies' => array('post_tag'),
       
