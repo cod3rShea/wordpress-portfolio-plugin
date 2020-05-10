@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying portfolio archive pages
+ * The template for displaying all portfolio archive posts
  */
 
 get_header();

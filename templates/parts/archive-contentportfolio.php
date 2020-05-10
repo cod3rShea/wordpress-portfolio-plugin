@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying portfolio archive posts
+ * The template for displaying all portfolio archive posts
  */
 
 ?>
@@ -48,18 +48,6 @@
 			    }
 			} 
 		
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'sean-shea-development' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sean-shea-development' ),
