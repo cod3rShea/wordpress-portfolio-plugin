@@ -72,15 +72,19 @@
 				    // Run a loop and print them all
 				?>
 					<h2> Built With:</h2>
+					<ul class="built-with">
 					<?php 
-				    foreach ( $terms as $term ) { ?>
-				        <a href="<?php echo esc_url( get_term_link( $term ) ) ?>">
-				            <?php echo $term->name; ?>
-				        </a><?php
-				    }
-				} 
-
-			?>
+						$post_type = get_post_type(get_the_ID());   
+					    $taxonomies = get_object_taxonomies($post_type);   
+					    $taxonomy_names = wp_get_object_terms(get_the_ID(), $taxonomies,  array("fields" => "names")); 
+					    if(!empty($taxonomy_names)) :
+					       foreach($taxonomy_names as $tax_name) : ?>              
+					          <p><?php echo $tax_name; ?> </p>
+					       <?php endforeach;
+					    endif;
+				    ?>
+					</ul>
+				<?php } ?>
 		</aside>
 	</div>
 
